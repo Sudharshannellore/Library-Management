@@ -1,0 +1,22 @@
+package com.libray.libdata;
+
+import java.sql.Date;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class LibrayData {
+
+	private int transcationId;
+	private int bookId;
+	private int userId;
+	private Date issuedDate;
+	private Date returnDate;
+	private String status;
+	public LibrayData() {
+       System.out.println("LibrayDataCreated");
+	}
+      
+	
+	
+}

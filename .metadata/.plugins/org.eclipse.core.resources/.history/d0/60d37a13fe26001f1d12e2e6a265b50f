@@ -1,0 +1,16 @@
+package com.libray.model;
+
+import com.libray.libdata.LibrayData;
+
+public class ResponseData {
+	
+	private LibrayData libdata;
+	private BookData bookData;
+	private UserData userData;
+	public ResponseData() {
+		System.out.println("ResponseData Started");
+	}
+	
+	
+
+}

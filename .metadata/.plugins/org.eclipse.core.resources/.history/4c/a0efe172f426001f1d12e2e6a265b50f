@@ -1,0 +1,28 @@
+package com.libray.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.libray.libdata.LibrayData;
+import com.libray.repo.LibTranscationRepo;
+
+@RestController
+@RequestMapping("/library")
+public class LibTranscationContrlloer {
+
+  @Autowired
+  private RestTemplate template;	
+  
+  @Autowired
+  private LibTranscationRepo repo;
+  
+  
+  @PostMapping("/save")
+  public LibrayData  save(@RequestBody LibrayData data) {
+	
+}
+}

@@ -1,0 +1,5 @@
+package com.libray.repo;
+
+public interface LibTranscationRepo {
+
+}

@@ -1,0 +1,17 @@
+package com.user.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.user.model.UserService;
+import com.user.repo.UserRepo;
+
+@Service
+public class UserService {
+	@Autowired
+	private UserRepo repo;
+	
+	public UserService save(UserService user) {
+		return repo.save(user);
+	}
+}

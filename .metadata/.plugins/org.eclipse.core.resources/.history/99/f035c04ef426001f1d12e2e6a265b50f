@@ -1,0 +1,17 @@
+package com.libray.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.libray.repo.LibTranscationRepo;
+
+@RestController
+public class LibTranscationContrlloer {
+
+  @Autowired
+  private RestTemplate template;	
+  
+  @Autowired
+  private LibTranscationRepo repo;
+}

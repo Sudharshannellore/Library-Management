@@ -1,0 +1,16 @@
+package com.book.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GenerationType;
+
+@Entity
+public class BookData {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO
+    private int id;
+    private String title;
+    private String author;
+    private String isbn;
+    private Date publishedDate;
+    private String status;
+}
